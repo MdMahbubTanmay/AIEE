@@ -419,10 +419,10 @@ a{
 
 @media (max-width:768px) {
     .navbar {
-        padding: 15px 85%;
+        padding: 15px 70%;
     }
     .navbar ul li {
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .home{
