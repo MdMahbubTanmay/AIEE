@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #1f242d;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar {
+    position : fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: #02ff5b 0px 0.1px 3px 0px;
+    background: #1f242d;
+
+}
+
+.navbar .logo {
+    font-size: 30px;
+    color: #00ff0d;
+    font-weight: 700;
+}
+
+.navbar .logo span#i1{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    animation: 3s running infinite iMahbub;
+}
+
+.navbar .logo span#i2{
+    font-size: 20px;
+    color: #2bff00;
+    font-weight: 700;
+    animation: 3s running infinite iTanmay;
+}
+
+
+@keyframes iMahbub {
+    50%{font-size: 20px; color: #00ff0d;}
+    
+}
+@keyframes iTanmay {
+    50%{font-size: 30px; color: #ffffff;}
+    
+}
+
+
+.navbar ul {
+    display: flex;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.navbar ul li a:hover{
+    color: #02ff5b;
+}
+
+
+.home {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 9%;
+    color: #ffffff;
+    animation: HomeLoad;
+    animation-duration: 2s;
+}
+
+
+
+@keyframes HomeLoad{
+    from{  opacity:  0%;}
+    to{  opacity: 100%;}
+}
+
+
+.home .home-info h1 {
+    font-size: 38px;
+}
+
+.home .home-info h1 span {
+    color: #00ff0d;
+}
+
+.home .home-info h2 {
+    font-size: 20px;
+    width: auto;
+    margin-top: 10px;
+}
+.home .home-info h2 span {
+    color: #00ff0d;
+}
+
+
+.home .home-info p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #b0b3b8;
+    line-height: 1.6;
+    width: 100%;
+}
+
+.home .home-info .btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+.home .home-info .btn .btn-1 {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 2px solid #02ff5b;
+    background: #02ff5b;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: #9dffb5 0px 0px 6px 0px  ;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.home .home-info .btn .btn-1:hover {
+    background: #02ff5b;
+    color: #ffffff;
+}
+
+.home .home-info .btn .btn-2 {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 2px solid #02ff5b;
+    background: transparent;
+    color: #02ff5b;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.home .home-info .btn .btn-2:hover {
+    background: #02ff5b;
+    color: #1f242d;
+}
+
+.home .home-img {
+    margin-right: 50px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 1100px;
+    object-fit: cover;
+    animation: 5s infinite ImgAnim;
+
+
+    
+}
+
+@keyframes ImgAnim{
+    0%{box-shadow: #02ff5b 0px 0px 1px 0px ;}
+    50%{box-shadow: #02ff5b 0px 0px 20px 0px ;}
+    100%{box-shadow: #02ff5b 0px 0px 1px 0px ;}
+}
+
+
+
+
+
+
+
+.about {
+    height: auto;
+    padding: 110px 9%;
+    color: #ffffff;
+    justify-content: center;
+
+}
+
+
+
+.about h1{
+    font-size: 36px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+
+
+.about .line-1 {
+    align-items: left;
+    display: flex;
+}
+
+
+.about .line-1 .block1{
+    background: #011b0f;
+    width: 50%;
+    height: 20%;
+    margin-right: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: #ffffff 0px 0px 5px 0px;
+    transition: 0.5s;
+}
+.about .line-1 .block1:hover{
+    background: #000000;
+    cursor: crosshair;
+    animation: 0.4s  running infinite tanmay;
+
+    
+}
+
+
+.about .line-1 .block1 .title, .about .line-1 .block2 .title, .about .line-2 .block1 .title, .about .line-2 .block2 .title{
+    display: flex;
+}
+
+.about .line-1 .block1 .title h2, .about .line-1 .block2 .title h2, .about .line-2 .block1 .title h2, .about .line-2 .block2 .title h2{
+    margin-left: 10px;
+    font-size: 24px;
+    color: #00ff3c;
+}
+
+
+.about .line-1 .block1 .title i, .about .line-1 .block2 .title i, .about .line-2 .block1 .title i, .about .line-2 .block2 .title i{
+    font-size: 30px;
+    color: #00ff3c;
+
+}
+
+.about .line-1 .block2{
+    background: #1b1701;
+    width: 50%;
+    height: 20%;
+    margin-right: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: #ffffff 0px 0px 5px 0px;
+    transition: 0.5s;
+}
+.about .line-1 .block2:hover{
+    background: #000000;
+    cursor: crosshair;
+    animation: 0.4s  running infinite tanmay;
+}
+
+
+
+
+
+.about .line-2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.about .line-2 .block1{
+    background: #1a0101;
+    width: 50%;
+    height: 20;
+    margin-right: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: #ffffff 0px 0px 5px 0px;
+    transition: 10.5;
+}
+.about .line-2 .block1:hover{
+    background: #000000;
+    cursor: crosshair;
+    animation: 0.4s  running infinite tanmay;
+}
+
+
+
+
+.about .line-2 .block2{
+    background: #1b0117;
+    width: 50%;
+    height: 20%;
+    margin-right: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: #ffffff 0px 0px 5px 0px;
+    transition: 0.5s;
+}
+.about .line-2 .block2:hover{
+    background: #000000;
+    animation: 0.4s  running infinite tanmay;
+    cursor: crosshair;
+}
+
+
+
+
+.contact {
+    height: auto;
+    padding: 110px 9%;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+
+}
+
+
+
+.contact h1{
+    font-size: 36px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.contact .ContactBox{
+    height: auto;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: #00ff0d 0px 0px 2px 0px;
+
+
+
+}
+
+.contact .ContactBox p{
+    text-align: center;
+}
+
+.contact .ContactBox:hover{
+    cursor: pointer;
+    animation: 2s  running infinite mahbub;
+}
+
+.contact .ContactBox .Social{
+    margin-top: 10%;
+    text-align: center;
+   
+
+}
+
+.contact .ContactBox .Social a{
+    color: #00ff0d;
+    font-size: 30px;
+    padding: 10px;
+}
+.contact .ContactBox .Social a:hover{
+    color: #ffffff;
+}
+
+
+.contact .dev{
+    font-size: 11px;
+    margin-top: 5%;
+}
+
+.contact .dev .MyGit a{
+    color: #f6f6f6;
+    font-size: 15px;
+}
+
+@keyframes mahbub{
+    0%{box-shadow: #00ff0d 0px 0px 1px 0px;}
+    50%{box-shadow: #00ff0d 0px 0px 10px 0px;}
+    100%{box-shadow: #00ff0d 0px 0px 1px 0px;}
+}
+.contact .dev .MyGit a:hover{
+    cursor: pointer;
+    color: #e6ff01;
+}
+
+@keyframes tanmay{
+    0%{box-shadow: #ffff 0px -2px 4px 0px;}
+    33%{box-shadow: #ffff 2px 0px 4px 0px;}
+    66%{box-shadow: #ffff 0px 2px 4px 0px;}
+    99%{box-shadow: #ffff -2px 0px 4px 0px;}
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 15px 85%;
+    }
+    .navbar ul li {
+        margin-left: 150px;
+    }
+
+    .home{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-top: 100px;
+        justify-content: center;
+    }
+
+    .home .home-img {
+        margin-left: 10px;
+        margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-img img {
+    margin-bottom: 50px;
+
+    
+}
+
+.about .line-1, .about .line-2{
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.about .line-1 .block1, .about .line-2 .block1,.about .line-2 .block2{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ .about .line-1 .block2{
+        width: 100%;
+    margin-bottom: 0px;
+}
+
+ .about .line-2 .block2{
+    margin-bottom: 20px;
+}
+
+
+/*
+
+.contact {
+    height: 100vh;
+    margin-top: 10px;
+    padding: 100px 9%;
+
+}
+
+
+
+.contact h1{
+    margin-top: 20%;
+    font-size: 36px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+*/
+
+    
+}
