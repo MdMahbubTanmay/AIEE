@@ -36,7 +36,7 @@ I have zero passion for the "web" and even less for **JavaScript**. JS is a mess
 ---
 
 ## 📂 Project Structure
-```bash
+
 ├── assets       # Containing all assets used
 ├── index.html   # Core structure and content
 ├── style.css    # All styling, layout, and animations
@@ -52,6 +52,6 @@ Developer: Md Mahbub Tanmay
 
 
 📞 Connect with AIEE
-Facebook Page: <a href="https://web.facebook.com/AIEEbyJM/">AIEE Official</a>
+Facebook Page: [AIEE Official](https://web.facebook.com/AIEEbyJM/) 
 
-Facebook Group: <a href="https://www.facebook.com/groups/1741216329850552">Join Facebook Community</a>
+Facebook Group: [Join Facebook Community](https://www.facebook.com/groups/1741216329850552)
