@@ -86,8 +86,6 @@ a{
 .home {
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 160px 9%;
     color: #ffffff;
     animation: HomeLoad;
@@ -131,7 +129,7 @@ a{
 }
 
 .home .home-info .btn {
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -170,18 +168,19 @@ a{
 }
 
 .home .home-img {
+    margin-top: 200px;
     margin-right: 50px;
     margin-left: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: top;
+    justify-content: top;
 }
 
 .home .home-img img {
     width: 300px;
     height: 300px;
     border-radius: 1100px;
-    object-fit: cover;
+    object-fit:cover;
     animation: 5s infinite ImgAnim;
 
 
@@ -384,6 +383,39 @@ a{
     color: #ffffff;
 }
 
+.contact .ContactBox .GForm {
+    
+    color: #ffffff;
+    box-shadow: #00ff0d 0px 0px 3px 1px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 6%;
+    transition: 0.5s;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.contact .ContactBox .GForm a{
+    
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.contact .ContactBox .GForm:hover{
+    background-color: #00ff0d;
+}
+
+.contact .ContactBox .GForm a:hover{
+    color: #000000;
+}
+
 
 .contact .dev{
     font-size: 11px;
@@ -394,6 +426,7 @@ a{
     color: #f6f6f6;
     font-size: 15px;
 }
+
 
 @keyframes mahbub{
     0%{box-shadow: #00ff0d 0px 0px 1px 0px;}
@@ -421,7 +454,7 @@ a{
 
 @media (max-width:768px) {
     .navbar {
-        padding: 15px 70%;
+        padding: 15px 75%;
     }
     .navbar ul li {
         margin-left: 100px;
@@ -473,10 +506,6 @@ a{
 
 
 .home .home-info span#mt img{
-    margin: 10px;
-    font-size: 16px;
-    color: #b0b3b8;
-    line-height: 1.6;
     width: 100%;
 }
 /*
@@ -499,4 +528,19 @@ a{
 */
 
     
+}
+
+
+@media (min-width:1300px ) {
+
+    .home {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-img {
+    margin-top: 0px;
+
+}
 }
